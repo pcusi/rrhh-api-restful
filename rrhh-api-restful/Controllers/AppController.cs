@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Localization;
 using rrhh_api_restful.Middlewares.ApiWrapper.Extensions;
 using rrhh_api_restful.Middlewares.ApiWrapper.Wrappers;
@@ -14,11 +15,13 @@ namespace rrhh_api_restful.Controllers
     {
         protected readonly RhDbContext _db;
         protected readonly IStringLocalizer<SharedResource> _stringLocalizer;
+        protected readonly IConfiguration _config;
 
-        public AppController(RhDbContext db, IStringLocalizer<SharedResource> stringLocalizer)
+        public AppController(RhDbContext db, IStringLocalizer<SharedResource> stringLocalizer, IConfiguration config)
         {
             _db = db;
             _stringLocalizer = stringLocalizer;
+            _config = config;
         }
         
         protected Dictionary<string, Dictionary<string, Dictionary<string, object>>> apiModelErrors = new Dictionary<string, Dictionary<string, Dictionary<string, object>>>();

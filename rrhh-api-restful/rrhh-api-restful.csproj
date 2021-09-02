@@ -6,7 +6,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="3.1.0" />
       <PackageReference Include="MailKit" Version="2.15.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
       <PackageReference Include="Microsoft.Data.SqlClient" Version="4.0.0-preview1.21237.2" />
       <PackageReference Include="Microsoft.Data.SqlClient.SNI.runtime" Version="4.0.0-preview1.21232.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.18" />
@@ -14,11 +16,13 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="3.1.18" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.18" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.18" />
+      <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.8.0" />
       <PackageReference Include="MimeKit" Version="2.15.0" />
       <PackageReference Include="runtime.native.System.Data.SqlClient.sni" Version="4.7.0" />
       <PackageReference Include="runtime.win-arm64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
       <PackageReference Include="runtime.win-x64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
       <PackageReference Include="runtime.win-x86.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
     </ItemGroup>
 
 

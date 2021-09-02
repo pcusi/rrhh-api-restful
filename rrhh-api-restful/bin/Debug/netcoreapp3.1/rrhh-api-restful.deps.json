@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "rrhh-api-restful/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "3.1.0",
           "MailKit": "2.15.0",
           "Microsoft.Data.SqlClient": "4.0.0-preview1.21237.2",
           "Microsoft.Data.SqlClient.SNI.runtime": "4.0.0-preview1.21232.1",
@@ -39,7 +40,9 @@
           "Microsoft.EntityFrameworkCore.Analyzers": "3.1.18",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.18",
+          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
           "MimeKit": "2.15.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0",
           "runtime.native.System.Data.SqlClient.sni": "4.7.0",
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
           "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -356,6 +359,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Azure.Identity.dll": {}
+        }
+      },
+      "BCrypt.Net-Next/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/BCrypt.Net-Next.dll": {}
         }
       },
       "MailKit/2.15.0": {
@@ -2741,6 +2755,13 @@
       "sha512": "sha512-l1SYfZKOFBuUFG7C2SWHmJcrQQaiXgBdVCycx4vcZQkC6efDVt7mzZ5pfJAFEJDBUq7mjRQ0RPq9ZDGdSswqMg==",
       "path": "azure.identity/1.3.0",
       "hashPath": "azure.identity.1.3.0.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zpAiSXd1mvPh/+cG0ItL8bD9dkPZ92D/QmgL4OlikxBBHeb4Vm39eSwk2igAdbXFp7Vx9DnRxf4PjB+5+8V4cA==",
+      "path": "bcrypt.net-next/3.1.0",
+      "hashPath": "bcrypt.net-next.3.1.0.nupkg.sha512"
     },
     "MailKit/2.15.0": {
       "type": "package",

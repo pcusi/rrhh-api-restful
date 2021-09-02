@@ -2,6 +2,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Localization;
 using rrhh_api_restful.DTO.Request.EstadoCivil;
 using rrhh_api_restful.DTO.Response.EstadoCivil;
@@ -12,7 +13,7 @@ namespace rrhh_api_restful.Controllers
 {
     public class EstadoCivilController : AppController
     {
-        public EstadoCivilController(RhDbContext db, IStringLocalizer<SharedResource> stringLocalizer) : base(db, stringLocalizer)
+        public EstadoCivilController(RhDbContext db, IStringLocalizer<SharedResource> stringLocalizer, IConfiguration config) : base(db, stringLocalizer, config)
         {
         }
 
@@ -44,10 +45,10 @@ namespace rrhh_api_restful.Controllers
             return estadosCiviles;
         }
         
-        [HttpPut("editar/{IdEstCivil}")]
-        public async Task<IActionResult> EditarEstadoCivil([FromBody] RegistrarEstadoCivilRequest request, [FromRoute] long IdEstCivil)
+        [HttpPut("editar/{idEstCivil}")]
+        public async Task<IActionResult> EditarEstadoCivil([FromBody] RegistrarEstadoCivilRequest request, [FromRoute] long idEstCivil)
         {
-            var estadoCivil = await _db.EstadoCivil.Where(ec => ec.Id == IdEstCivil).SingleOrDefaultAsync();
+            var estadoCivil = await _db.EstadoCivil.Where(ec => ec.Id == idEstCivil).SingleOrDefaultAsync();
 
             estadoCivil.Nombre = request.Nombre;
 

@@ -84,3 +84,4 @@
 /Volumes/Workspace/Apis RESTFUL/rrhh-api-restful/rrhh-api-restful/obj/Debug/netcoreapp3.1/rrhh-api-restful.dll
 /Volumes/Workspace/Apis RESTFUL/rrhh-api-restful/rrhh-api-restful/obj/Debug/netcoreapp3.1/rrhh-api-restful.pdb
 /Volumes/Workspace/Apis RESTFUL/rrhh-api-restful/rrhh-api-restful/obj/Debug/netcoreapp3.1/rrhh-api-restful.genruntimeconfig.cache
+/Volumes/Workspace/Apis RESTFUL/rrhh-api-restful/rrhh-api-restful/bin/Debug/netcoreapp3.1/BCrypt.Net-Next.dll

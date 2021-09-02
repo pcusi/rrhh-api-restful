@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2gDXjLDJkV7yaAmJ7xdaX1X14OVGZAdg4fphEpv0SRS5bFj0pi4Uwdd6ExRiV6EV8mE3gb9I5GqdwzPWXSLjzg==",
+  "dgSpecHash": "+JJZGwoq2+A546F7GMfTVYWSDPgC3kic275lXpjE/rTTyEi/9fN6RbjOgJPXzw9ImY+MvCw3llo8Mq1nX/ACnw==",
   "success": true,
   "projectFilePath": "/Volumes/Workspace/Apis RESTFUL/rrhh-api-restful/rrhh-api-restful/rrhh-api-restful.csproj",
   "expectedPackageFiles": [
     "/Users/pcusir/.nuget/packages/azure.core/1.6.0/azure.core.1.6.0.nupkg.sha512",
     "/Users/pcusir/.nuget/packages/azure.identity/1.3.0/azure.identity.1.3.0.nupkg.sha512",
+    "/Users/pcusir/.nuget/packages/bcrypt.net-next/3.1.0/bcrypt.net-next.3.1.0.nupkg.sha512",
     "/Users/pcusir/.nuget/packages/mailkit/2.15.0/mailkit.2.15.0.nupkg.sha512",
+    "/Users/pcusir/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.18/microsoft.aspnetcore.authentication.jwtbearer.3.1.18.nupkg.sha512",
     "/Users/pcusir/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/pcusir/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/pcusir/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
